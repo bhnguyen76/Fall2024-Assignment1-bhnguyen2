@@ -20,3 +20,38 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#Title {
+    color: black;
+    text-align: center;
+}
+
+#CoverArt {
+
+}
+
+#Rating {
+    text-align: center;
+}
+
+#Trailer {
+}
+
+#Summary {
+    text-align: center;
+}
+
+#Actors {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
