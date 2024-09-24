@@ -18,40 +18,115 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+@font-face {
+    font-family: 'Yasashii Bold';
+    src: url('yasashii-w01-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url('Amazon Ember.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.background-section {
+    height: 800px;
+    background-image: url('../images/lalalandhd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
+    flex-direction: column;
 }
 
-#Title {
-    color: black;
-    text-align: center;
+.background-section h1 {
+    font-size: 4em;
+    font-family: 'Yasashii Bold'; 
+    margin-bottom: 1px;
 }
 
-#CoverArt {
+.content_section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 
+    background-color: ivory;
 }
+
+.content_section ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.content_section li {
+    margin: 10px; 
+    text-align: center; 
+}
+
+.content_section h1 {
+    font-family: "Yasashii Bold";
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.circular-image {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.image-link {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.image-link img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.name {
+    font-family: "Yasashii Bold";
+    margin-top: 5px;
+}
+
 
 #Rating {
-    text-align: center;
+    font-family: 'Amazon Ember';
+    margin-top: 1px;
 }
 
 #Trailer {
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 #Summary {
-    text-align: center;
-}
-
-#Actors {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    text-align:center;
 }
